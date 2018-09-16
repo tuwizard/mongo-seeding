@@ -3,7 +3,11 @@ process.env.DEBUG = 'mongo-seeding';
 
 import * as commandLineArgs from 'command-line-args';
 import { seedDatabase } from 'mongo-seeding';
-import { cliOptions, validateOptions, mergeCmdAndEnvOptions } from './options';
+import {
+  cliOptions,
+  validateOptions,
+  createConfigFromOptions,
+} from './options';
 import { showHelp, shouldShowHelp } from './help';
 import { CommandLineArguments } from './types';
 
@@ -23,7 +27,7 @@ export const run = async () => {
     return;
   }
 
-  const config = mergeCmdAndEnvOptions(options);
+  const config = createConfigFromOptions(options);
 
   try {
     validateOptions(options);
