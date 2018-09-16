@@ -2,7 +2,7 @@
 
 The directory contains the following documents:
 
-- **[`import-data-definition.md`](./import-data-definition.md)** describes how to define documents and collections for MongoDB database import.
+- **[`import-data-definition-tutorial.md`](./import-data-definition-tutorial.md)** describes how to define documents and collections for MongoDB database import.
 
 ## Details of Mongo Seeding solutions
 
