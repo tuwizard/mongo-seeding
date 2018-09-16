@@ -71,6 +71,7 @@
   "devDependencies": {
     "@types/command-line-args": "^5.0.0",
     "@types/extend": "^3.0.0",
+    "@types/jest": "^23.3.2",
     "jest": "^23.6.0",
     "ts-jest": "^23.1.0"
   },
